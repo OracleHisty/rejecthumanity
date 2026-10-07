@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "package": "net.oraclehisty.rejecthumanity.mixins",
+  "compatibilityLevel": "JAVA_21",
+  "minVersion": "0.8",
+  "refmap": "rejecthumanity.refmap.json",
+  "client": [
+  ],
+  "mixins": [
+    "RejectHumanityMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
