@@ -1,0 +1,144 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"siter2": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 3.9906,
+			"override_previous_animation": true
+		},
+		"teb": {
+			"loop": true,
+			"animation_length": 8.6957
+		},
+		"tuck": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1.75
+		},
+		"Blink": {
+			"loop": true,
+			"animation_length": 1,
+			"loop_delay": 10
+		},
+		"idle": {
+			"loop": true,
+			"animation_length": 1.5
+		},
+		"walk": {
+			"loop": true,
+			"animation_length": 1,
+			"bones": {
+				"Blocky Elf Ears": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.4583": {
+							"vector": [-16, 0, 0]
+						},
+						"1.0": {
+							"vector": [0, 0, 0]
+						}
+					},
+					"position": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.4583": {
+							"vector": [0, -1, 0]
+						},
+						"1.0": {
+							"vector": [0, 0, 0]
+						}
+					}
+				}
+			}
+		},
+		"sprint": {
+			"loop": true,
+			"animation_length": 0.7966,
+			"bones": {
+				"Blocky Elf Ears": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.337": {
+							"vector": [-16, 0, 0]
+						},
+						"0.7966": {
+							"vector": [0, 0, 0]
+						}
+					},
+					"position": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.337": {
+							"vector": [0, -1, 0]
+						},
+						"0.7966": {
+							"vector": [0, 0, 0]
+						}
+					}
+				}
+			}
+		},
+		"crouch": {
+			"loop": true,
+			"bones": {
+				"Blocky Elf Ears": {
+					"rotation": {
+						"vector": [-32.5, 0, 0]
+					},
+					"position": {
+						"vector": [0, -2, 0]
+					}
+				}
+			}
+		},
+		"elytra": {
+			"loop": true
+		},
+		"glide": {
+			"loop": true,
+			"animation_length": 2
+		},
+		"flap": {
+			"animation_length": 1,
+			"timeline": {
+				"1.0": "FlapComplete();"
+			}
+		},
+		"dive": {
+			"loop": true,
+			"animation_length": 2
+		},
+		"sit": {
+			"loop": "hold_on_last_frame"
+		},
+		"earsdown": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.5,
+			"bones": {
+				"Blocky Elf Ears": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.5": {
+							"vector": [-32.5, 0, 0]
+						}
+					},
+					"position": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.5": {
+							"vector": [0, -2, 0]
+						}
+					}
+				}
+			}
+		}
+	}
+}
