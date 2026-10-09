@@ -31,6 +31,7 @@ object RejectHumanity {
         MOD_BUS.addListener<EntityAttributeCreationEvent> { event -> event.put(RHEntities.GENERIC_ENTITY, LivingEntity.createLivingAttributes().build())}
 
         RHItems.register()
+        RHEntities.register()
     }
 
     private fun onCommonSetup(event: FMLCommonSetupEvent) {

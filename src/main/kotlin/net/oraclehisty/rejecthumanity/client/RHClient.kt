@@ -11,7 +11,7 @@ import thedarkcolour.kotlinforforge.neoforge.forge.MOD_BUS
 @Mod(RejectHumanity.ID, dist = [CLIENT])
 object RHClient {
     init {
-        MOD_BUS.register(::registerEntityRenderers)
+        MOD_BUS.addListener(::registerEntityRenderers)
     }
     fun registerEntityRenderers(event: EntityRenderersEvent.RegisterRenderers) {
         event.registerEntityRenderer(RHEntities.GENERIC_ENTITY, ::RHGenericEntityRenderer)

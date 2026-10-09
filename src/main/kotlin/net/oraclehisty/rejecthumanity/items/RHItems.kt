@@ -7,7 +7,7 @@ import net.oraclehisty.rejecthumanity.RejectHumanity.bus
 import net.oraclehisty.rejecthumanity.helpers.SingletonRegister
 
 object RHItems: SingletonRegister<Item>(BuiltInRegistries.ITEM) {
-    val GENERIC = create("generic") {
+    val GENERIC by create("generic") {
         Item(Item.Properties())
     }
 }

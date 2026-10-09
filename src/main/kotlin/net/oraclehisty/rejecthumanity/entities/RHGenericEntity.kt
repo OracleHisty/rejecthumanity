@@ -13,31 +13,20 @@ import software.bernie.geckolib.util.GeckoLibUtil
 class RHGenericEntity(entityType: EntityType<out RHGenericEntity> = RHEntities.GENERIC_ENTITY, level: net.minecraft.world.level.Level): LivingEntity(
     entityType, level), GeoEntity {
     val geoCache =  GeckoLibUtil.createInstanceCache(this)
-    override fun getArmorSlots(): Iterable<ItemStack?> {
-        return emptyList() //remind me to use listOf instead later.
-    }
 
-    override fun getItemBySlot(slot: EquipmentSlot): ItemStack {
-        return ItemStack.EMPTY
-    }
+    override fun getArmorSlots(): Iterable<ItemStack> = emptyList() //remind me to use listOf instead later.
+
+    override fun getItemBySlot(slot: EquipmentSlot): ItemStack = ItemStack.EMPTY
 
     override fun setItemSlot(
         slot: EquipmentSlot,
         stack: ItemStack
-    ) {
+    ) {}
 
-    }
+    override fun getMainArm(): HumanoidArm = HumanoidArm.RIGHT
 
-    override fun getMainArm(): HumanoidArm {
-        return HumanoidArm.RIGHT
-    }
+    override fun registerControllers(registrar: AnimatableManager.ControllerRegistrar) {}
 
-    override fun registerControllers(p0: AnimatableManager.ControllerRegistrar?) {
-        TODO("Not yet implemented")
-    }
-
-    override fun getAnimatableInstanceCache(): AnimatableInstanceCache? {
-        return geoCache
-    }
+    override fun getAnimatableInstanceCache(): AnimatableInstanceCache = geoCache
 
 }
